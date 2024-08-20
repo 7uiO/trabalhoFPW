@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Configurações básicas do documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site Pessoal</title>
+    <style>
+        /* Estilo geral da página */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eaeaea;
+            color: #333;
+            scroll-behavior: smooth; /* Rolagem suave ao clicar nos links */
+        }
+        /* Estilo do cabeçalho */
+        header {
+            background-color: #007acc;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        /* Estilo da navegação */
+        nav {
+            background-color: #005f99;
+            padding: 10px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: color 0.3s; /* Transição suave ao passar o mouse */
+        }
+        nav a:hover {
+            color: #ffcc00; /* Cor ao passar o mouse sobre o link */
+        }
+        /* Estilo das seções principais */
+        section {
+            padding: 40px;
+            margin: 20px auto;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+        }
+        section h2 {
+            font-size: 2em;
+            color: #007acc;
+            margin-top: 0;
+        }
+        section p {
+            line-height: 1.6;
+        }
+        /* Estilo da galeria de imagens */
+        .image-gallery {
+            display: flex;
+            justify-content: space-between; /* Espaçamento entre as imagens */
+            margin-top: 20px;
+        }
+        .image-gallery img {
+            width: 18%; /* Tamanho proporcional das imagens */
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease; /* Efeito de ampliação suave */
+        }
+        .image-gallery img:hover {
+            transform: scale(1.05); /* Ampliação ao passar o mouse */
+        }
+        /* Estilo do formulário de contato */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px; /* Espaçamento entre os elementos do formulário */
+        }
+        form label {
+            font-weight: bold;
+        }
+        form input, form textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        form button {
+            background-color: #007acc;
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s; /* Transição suave para o botão */
+        }
+        form button:hover {
+            background-color: #005f99; /* Cor do botão ao passar o mouse */
+        }
+        /* Estilo do rodapé */
+        footer {
+            background-color: #005f99;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed; /* Rodapé fixo na parte inferior da página */
+            width: 100%;
+            bottom: 0;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabeçalho da página -->
+    <header>
+        <h1>Bem-vindo ao Meu Site Pessoal</h1>
+    </header>
+
+    <!-- Navegação do site -->
+    <nav>
+        <a href="#sobre-mim">Sobre Mim</a>
+        <a href="#portfolio">Portfólio</a>
+        <a href="#formacao">Formação</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <!-- Seção "Sobre Mim" -->
+    <section id="sobre-mim">
+        <h2>Sobre Mim</h2>
+        <p>Meu nome é Túlio Rossini, tenho 28 anos e sou aluno do curso de Análise e Desenvolvimento de Sistemas na UNINTER. Sou de Campinas - SP e assim como grande parte dos jovens da minha idade, gosto de ouvir música, sendo o rock meu gênero favorito. Também sou apaixonado por filmes, séries e videogames, hobbies que ocupam grande parte do meu tempo livre.</p>
+        
+        <!-- Galeria de imagens relacionadas aos interesses -->
+        <div class="image-gallery">
+            <img src="imagens/linkinPark.jpg" alt="Minha banda de rock favorita!">
+            <img src="imagens/bttf.jpg" alt="Meu filme favorito!">
+            <img src="imagens/theOffice.jpg" alt="Minha série favorita!">
+            <img src="imagens/rdr2.jpg" alt="Meu jogo favorito!">
+        </div>
+    </section>
+
+    <!-- Seção "Portfólio" -->
+    <section id="portfolio">
+        <h2>Portfólio</h2>
+        <p>Não possuo, esse é meu primeiro projeto no curso.</p>
+        <p>Para não passar em branco, fique com esse vídeo muito fofo do cãozinho interagindo com uma borboleta:</p>
+        
+        <!-- Vídeo do YouTube incorporado -->
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/watch?v=blkeG319mEI" title="Vídeo YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <!-- Seção "Formação" -->
+    <section id="formacao">
+        <h2>Formação</h2>
+        <p>Tenho formação como Técnico em Informática pelo SENAC e atualmente estou cursando Análise e Desenvolvimento de Sistemas na UNINTER. Embora ainda não tenha experiência profissional na área, ocasionalmente realizo pequenos serviços de manutenção em computadores.</p>
+        <p>Possuo inglês nível avançado.</p>
+    </section>
+
+    <!-- Seção "Contato" com formulário -->
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Se desejar entrar em contato comigo, por favor, preencha o formulário abaixo e eu responderei em breve!</p>
+        <br>
+        <form action="enviar-formulario.php" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+</body>
+</html>
