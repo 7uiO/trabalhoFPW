@@ -1,21 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <!-- Configurações básicas do documento -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Site Pessoal</title>
     <style>
-        /* Estilo geral da página */
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #eaeaea;
             color: #333;
-            scroll-behavior: smooth; /* Rolagem suave ao clicar nos links */
+            scroll-behavior: smooth;
         }
-        /* Estilo do cabeçalho */
         header {
             background-color: #007acc;
             color: white;
@@ -27,7 +24,6 @@
             margin: 0;
             font-size: 2.5em;
         }
-        /* Estilo da navegação */
         nav {
             background-color: #005f99;
             padding: 10px;
@@ -40,12 +36,11 @@
             margin: 0 15px;
             font-weight: bold;
             font-size: 1.1em;
-            transition: color 0.3s; /* Transição suave ao passar o mouse */
+            transition: color 0.3s;
         }
         nav a:hover {
-            color: #ffcc00; /* Cor ao passar o mouse sobre o link */
+            color: #ffcc00;
         }
-        /* Estilo das seções principais */
         section {
             padding: 40px;
             margin: 20px auto;
@@ -62,28 +57,26 @@
         section p {
             line-height: 1.6;
         }
-        /* Estilo da galeria de imagens */
         .image-gallery {
             display: flex;
-            justify-content: space-between; /* Espaçamento entre as imagens */
+            justify-content: space-between;
             margin-top: 20px;
         }
         .image-gallery img {
-            width: 18%; /* Tamanho proporcional das imagens */
+            width: 18%;
             max-width: 100%;
             height: auto;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease; /* Efeito de ampliação suave */
+            transition: transform 0.3s ease;
         }
         .image-gallery img:hover {
-            transform: scale(1.05); /* Ampliação ao passar o mouse */
+            transform: scale(1.05);
         }
-        /* Estilo do formulário de contato */
         form {
             display: flex;
             flex-direction: column;
-            gap: 15px; /* Espaçamento entre os elementos do formulário */
+            gap: 15px;
         }
         form label {
             font-weight: bold;
@@ -104,31 +97,38 @@
             border-radius: 5px;
             font-size: 1em;
             cursor: pointer;
-            transition: background-color 0.3s; /* Transição suave para o botão */
+            transition: background-color 0.3s;
         }
         form button:hover {
-            background-color: #005f99; /* Cor do botão ao passar o mouse */
+            background-color: #005f99;
         }
-        /* Estilo do rodapé */
         footer {
             background-color: #005f99;
             color: white;
             text-align: center;
             padding: 10px;
-            position: fixed; /* Rodapé fixo na parte inferior da página */
+            position: fixed;
             width: 100%;
             bottom: 0;
             box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
         }
+        .gif-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .gif-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
     </style>
 </head>
 <body>
-    <!-- Cabeçalho da página -->
     <header>
         <h1>Bem-vindo ao Meu Site Pessoal</h1>
     </header>
 
-    <!-- Navegação do site -->
     <nav>
         <a href="#sobre-mim">Sobre Mim</a>
         <a href="#portfolio">Portfólio</a>
@@ -136,12 +136,10 @@
         <a href="#contato">Contato</a>
     </nav>
 
-    <!-- Seção "Sobre Mim" -->
     <section id="sobre-mim">
         <h2>Sobre Mim</h2>
         <p>Meu nome é Túlio Rossini, tenho 28 anos e sou aluno do curso de Análise e Desenvolvimento de Sistemas na UNINTER. Sou de Campinas - SP e assim como grande parte dos jovens da minha idade, gosto de ouvir música, sendo o rock meu gênero favorito. Também sou apaixonado por filmes, séries e videogames, hobbies que ocupam grande parte do meu tempo livre.</p>
         
-        <!-- Galeria de imagens relacionadas aos interesses -->
         <div class="image-gallery">
             <img src="imagens/linkinPark.jpg" alt="Minha banda de rock favorita!">
             <img src="imagens/bttf.jpg" alt="Meu filme favorito!">
@@ -150,26 +148,21 @@
         </div>
     </section>
 
-    <!-- Seção "Portfólio" -->
     <section id="portfolio">
         <h2>Portfólio</h2>
         <p>Não possuo, esse é meu primeiro projeto no curso.</p>
-        <p>Para não passar em branco, fique com esse vídeo muito fofo do cãozinho interagindo com uma borboleta:</p>
-        
-        <!-- Vídeo do YouTube incorporado -->
-        <div class="video-container">
-            <iframe width="560" height="315" src="https://www.youtube.com/watch?v=blkeG319mEI" title="Vídeo YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <p>Para não passar em branco, fique com esse GIF muito fofo do cãozinho interagindo com uma borboleta:</p>
+        <div class="gif-container">
+            <img src="https://c.tenor.com/uFS2gobwhrMAAAAd/tenor.gif" alt="Cãozinho interagindo com uma borboleta">
         </div>
     </section>
 
-    <!-- Seção "Formação" -->
     <section id="formacao">
         <h2>Formação</h2>
-        <p>Tenho formação como Técnico em Informática pelo SENAC e atualmente estou cursando Análise e Desenvolvimento de Sistemas na UNINTER. Embora ainda não tenha experiência profissional na área, ocasionalmente realizo pequenos serviços de manutenção em computadores.</p>
+        <p>Tenho formação como Técnico em Informática pelo SENAC e atualmente estou cursando Análise e Desenvolvimento de Sistemas na UNINTER. Embora ainda não tenha experiência profissional na área, ocasionalmente realizo pequenos serviços de manutenção em computadores.
         <p>Possuo inglês nível avançado.</p>
     </section>
 
-    <!-- Seção "Contato" com formulário -->
     <section id="contato">
         <h2>Contato</h2>
         <p>Se desejar entrar em contato comigo, por favor, preencha o formulário abaixo e eu responderei em breve!</p>
